@@ -1,0 +1,358 @@
+ Request- Dispatcher = Man Object Cat = Object
+Log = /intranet/producao/manager/logs/requestDispatcher.log
+ RequestClass - Satelite = Modis TabName = ModisScene UserName = jrenato.nunes SceneId = A1MODIS20080520T175356 
+RequestClass - Sql Command: SELECT * FROM ModisScene WHERE SceneId='A1MODIS20080520T175356'
+RequestClass - File = AQUA_1_MODIS_20080520_175356
+RequestClass - Argument = jrenato.nunes;1;A1MODIS20080520T175356;AQUA_1_MODIS_20080520_175356;2;0
+RequestClass - starting P2U or P2C = p2u
+
+ ====> ** teste TiffFunctions:findTiffinDiskFromGralha =====> gralha = AQUA_1_MODIS_20080520_175356 
+decodeGralha - filename = AQUA_1_MODIS_20080520_175356 <br>
+%%%%% decodeGralha2 - parameters :  AQUA,1,MODIS,20080520,175356 <br>
+
+ ====> TiffFunctions:findTiffinDiskFromGralha - Gralha = AQUA_1_MODIS_20080520_175356 Satellite = AQUA Number = 1 Instrument = MODIS Channel_gralha =  Type =  Date = 20080520 Path =  Row =   
+
+
+Satellite : AQUA 
+
+
+
+Instrument : MODIS 
+
+
+
+Data : 2008  05  20   -   Horario : 17  53  56 
+
+
+aqua_file =  AQUA.MYDcrefl_TrueColor.2008_05_20.17_53_56.tif
+
+terra_file =  TERRA.MODcrefl_TrueColor.2008_05_20.17_53_56.tif
+
+dir =  /Level-2/AQUA1/2008_05/AQUA_MODIS.2008_05_20.17_53_56/
+findTiffinDiskFromGralha - command = find /Level-2/AQUA1/2008_05/AQUA_MODIS.2008_05_20.17_53_56/ -name AQUA.MYDcrefl_TrueColor.2008_05_20.17_53_56.tif <br>
+findTiffinDiskFromGralha - Files found : 1 (101)<br>
+Array
+(
+    [0] => /Level-2/AQUA1/2008_05/AQUA_MODIS.2008_05_20.17_53_56/AQUA.MYDcrefl_TrueColor.2008_05_20.17_53_56.tif
+)
+/Level-2/AQUA1/2008_05/AQUA_MODIS.2008_05_20.17_53_56/AQUA.MYDcrefl_TrueColor.2008_05_20.17_53_56.tif <br>
+**- p2u.p2u tiffs : <br>
+Array
+(
+    [0] => /Level-2/AQUA1/2008_05/AQUA_MODIS.2008_05_20.17_53_56/AQUA.MYDcrefl_TrueColor.2008_05_20.17_53_56.tif
+)
+<br>
+<br>sat_prefix  =  - satCod  = A1 -  this->sceneId  = A1MODIS20080520T175356 <br> 
+RequestClass - Everything OK - let's start p2u with this dependence 0
+startModule - INSERT INTO modulestatus SET
+			module = 'p2u',
+			argument = 'jrenato.nunes;1;A1MODIS20080520T175356;AQUA_1_MODIS_20080520_175356;2;0',
+			register = '2014-07-30 20:40:08',
+			dependid = 0,
+			host = '',
+			status = 'REGISTERED',
+			message = '',
+			who = 'AUTO' <br>
+executeModule p2u (1) - SELECT * FROM hosts,hostmodule WHERE tasks<maxtasks AND module='p2u' AND name=host ORDER BY (maxtasks-tasks) DESC <br>
+executeModule p2u (1) is being queued. <br>
+executeModule p2u (1) - UPDATE modulestatus SET
+				status = 'QUEUED',
+				message = ''
+				WHERE id = 1 <br>
+
+ RequestClass - Satelite = Modis TabName = ModisScene UserName = jrenato.nunes SceneId = A1MODIS20140730T153729 
+RequestClass - Sql Command: SELECT * FROM ModisScene WHERE SceneId='A1MODIS20140730T153729'
+RequestClass - File = AQUA_1_MODIS_20140730_153729
+RequestClass - Argument = jrenato.nunes;1;A1MODIS20140730T153729;AQUA_1_MODIS_20140730_153729;6;0
+RequestClass - starting P2U or P2C = p2u
+
+ ====> ** teste TiffFunctions:findTiffinDiskFromGralha =====> gralha = AQUA_1_MODIS_20140730_153729 
+decodeGralha - filename = AQUA_1_MODIS_20140730_153729 <br>
+%%%%% decodeGralha2 - parameters :  AQUA,1,MODIS,20140730,153729 <br>
+
+ ====> TiffFunctions:findTiffinDiskFromGralha - Gralha = AQUA_1_MODIS_20140730_153729 Satellite = AQUA Number = 1 Instrument = MODIS Channel_gralha =  Type =  Date = 20140730 Path =  Row =   
+
+
+Satellite : AQUA 
+
+
+
+Instrument : MODIS 
+
+
+
+Data : 2014  07  30   -   Horario : 15  37  29 
+
+
+aqua_file =  AQUA.MYDcrefl_TrueColor.2014_07_30.15_37_29.tif
+
+terra_file =  TERRA.MODcrefl_TrueColor.2014_07_30.15_37_29.tif
+
+dir =  /Level-2/AQUA1/2014_07/AQUA_MODIS.2014_07_30.15_37_29/
+findTiffinDiskFromGralha - command = find /Level-2/AQUA1/2014_07/AQUA_MODIS.2014_07_30.15_37_29/ -name AQUA.MYDcrefl_TrueColor.2014_07_30.15_37_29.tif <br>
+findTiffinDiskFromGralha - Files found : 1 (101)<br>
+Array
+(
+    [0] => /Level-2/AQUA1/2014_07/AQUA_MODIS.2014_07_30.15_37_29/AQUA.MYDcrefl_TrueColor.2014_07_30.15_37_29.tif
+)
+/Level-2/AQUA1/2014_07/AQUA_MODIS.2014_07_30.15_37_29/AQUA.MYDcrefl_TrueColor.2014_07_30.15_37_29.tif <br>
+**- p2u.p2u tiffs : <br>
+Array
+(
+    [0] => /Level-2/AQUA1/2014_07/AQUA_MODIS.2014_07_30.15_37_29/AQUA.MYDcrefl_TrueColor.2014_07_30.15_37_29.tif
+)
+<br>
+<br>sat_prefix  =  - satCod  = A1 -  this->sceneId  = A1MODIS20140730T153729 <br> 
+RequestClass - Everything OK - let's start p2u with this dependence 0
+startModule - INSERT INTO modulestatus SET
+			module = 'p2u',
+			argument = 'jrenato.nunes;1;A1MODIS20140730T153729;AQUA_1_MODIS_20140730_153729;6;0',
+			register = '2014-07-30 20:40:08',
+			dependid = 0,
+			host = '',
+			status = 'REGISTERED',
+			message = '',
+			who = 'AUTO' <br>
+executeModule p2u (2) - SELECT * FROM hosts,hostmodule WHERE tasks<maxtasks AND module='p2u' AND name=host ORDER BY (maxtasks-tasks) DESC <br>
+executeModule p2u (2) is being queued. <br>
+executeModule p2u (2) - UPDATE modulestatus SET
+				status = 'QUEUED',
+				message = ''
+				WHERE id = 2 <br>
+
+ RequestClass - Satelite = Modis TabName = ModisScene UserName = jrenato.nunes SceneId = A1MODIS20140730T171359 
+RequestClass - Sql Command: SELECT * FROM ModisScene WHERE SceneId='A1MODIS20140730T171359'
+RequestClass - File = AQUA_1_MODIS_20140730_171359
+RequestClass - Argument = jrenato.nunes;1;A1MODIS20140730T171359;AQUA_1_MODIS_20140730_171359;5;0
+RequestClass - starting P2U or P2C = p2u
+
+ ====> ** teste TiffFunctions:findTiffinDiskFromGralha =====> gralha = AQUA_1_MODIS_20140730_171359 
+decodeGralha - filename = AQUA_1_MODIS_20140730_171359 <br>
+%%%%% decodeGralha2 - parameters :  AQUA,1,MODIS,20140730,171359 <br>
+
+ ====> TiffFunctions:findTiffinDiskFromGralha - Gralha = AQUA_1_MODIS_20140730_171359 Satellite = AQUA Number = 1 Instrument = MODIS Channel_gralha =  Type =  Date = 20140730 Path =  Row =   
+
+
+Satellite : AQUA 
+
+
+
+Instrument : MODIS 
+
+
+
+Data : 2014  07  30   -   Horario : 17  13  59 
+
+
+aqua_file =  AQUA.MYDcrefl_TrueColor.2014_07_30.17_13_59.tif
+
+terra_file =  TERRA.MODcrefl_TrueColor.2014_07_30.17_13_59.tif
+
+dir =  /Level-2/AQUA1/2014_07/AQUA_MODIS.2014_07_30.17_13_59/
+findTiffinDiskFromGralha - command = find /Level-2/AQUA1/2014_07/AQUA_MODIS.2014_07_30.17_13_59/ -name AQUA.MYDcrefl_TrueColor.2014_07_30.17_13_59.tif <br>
+findTiffinDiskFromGralha - Files found : 1 (101)<br>
+Array
+(
+    [0] => /Level-2/AQUA1/2014_07/AQUA_MODIS.2014_07_30.17_13_59/AQUA.MYDcrefl_TrueColor.2014_07_30.17_13_59.tif
+)
+/Level-2/AQUA1/2014_07/AQUA_MODIS.2014_07_30.17_13_59/AQUA.MYDcrefl_TrueColor.2014_07_30.17_13_59.tif <br>
+**- p2u.p2u tiffs : <br>
+Array
+(
+    [0] => /Level-2/AQUA1/2014_07/AQUA_MODIS.2014_07_30.17_13_59/AQUA.MYDcrefl_TrueColor.2014_07_30.17_13_59.tif
+)
+<br>
+<br>sat_prefix  =  - satCod  = A1 -  this->sceneId  = A1MODIS20140730T171359 <br> 
+RequestClass - Everything OK - let's start p2u with this dependence 0
+startModule - INSERT INTO modulestatus SET
+			module = 'p2u',
+			argument = 'jrenato.nunes;1;A1MODIS20140730T171359;AQUA_1_MODIS_20140730_171359;5;0',
+			register = '2014-07-30 20:40:08',
+			dependid = 0,
+			host = '',
+			status = 'REGISTERED',
+			message = '',
+			who = 'AUTO' <br>
+executeModule p2u (3) - SELECT * FROM hosts,hostmodule WHERE tasks<maxtasks AND module='p2u' AND name=host ORDER BY (maxtasks-tasks) DESC <br>
+executeModule p2u (3) is being queued. <br>
+executeModule p2u (3) - UPDATE modulestatus SET
+				status = 'QUEUED',
+				message = ''
+				WHERE id = 3 <br>
+
+ RequestClass - Satelite = Modis TabName = ModisScene UserName = jrenato.nunes SceneId = T1MODIS20101201T125758 
+RequestClass - Sql Command: SELECT * FROM ModisScene WHERE SceneId='T1MODIS20101201T125758'
+RequestClass - File = TERRA_1_MODIS_20101201_125758
+RequestClass - Argument = jrenato.nunes;1;T1MODIS20101201T125758;TERRA_1_MODIS_20101201_125758;1;0
+RequestClass - starting P2U or P2C = p2u
+
+ ====> ** teste TiffFunctions:findTiffinDiskFromGralha =====> gralha = TERRA_1_MODIS_20101201_125758 
+decodeGralha - filename = TERRA_1_MODIS_20101201_125758 <br>
+%%%%% decodeGralha2 - parameters :  TERRA,1,MODIS,20101201,125758 <br>
+
+ ====> TiffFunctions:findTiffinDiskFromGralha - Gralha = TERRA_1_MODIS_20101201_125758 Satellite = TERRA Number = 1 Instrument = MODIS Channel_gralha =  Type =  Date = 20101201 Path =  Row =   
+
+
+Satellite : TERRA 
+
+
+
+Instrument : MODIS 
+
+
+
+Data : 2010  12  01   -   Horario : 12  57  58 
+
+
+aqua_file =  AQUA.MYDcrefl_TrueColor.2010_12_01.12_57_58.tif
+
+terra_file =  TERRA.MODcrefl_TrueColor.2010_12_01.12_57_58.tif
+
+dir =  /Level-2/TERRA1/2010_12/TERRA_MODIS.2010_12_01.12_57_58/
+findTiffinDiskFromGralha - command = find /Level-2/TERRA1/2010_12/TERRA_MODIS.2010_12_01.12_57_58/ -name TERRA.MODcrefl_TrueColor.2010_12_01.12_57_58.tif <br>
+findTiffinDiskFromGralha - Files found : 1 (104)<br>
+Array
+(
+    [0] => /Level-2/TERRA1/2010_12/TERRA_MODIS.2010_12_01.12_57_58/TERRA.MODcrefl_TrueColor.2010_12_01.12_57_58.tif
+)
+/Level-2/TERRA1/2010_12/TERRA_MODIS.2010_12_01.12_57_58/TERRA.MODcrefl_TrueColor.2010_12_01.12_57_58.tif <br>
+**- p2u.p2u tiffs : <br>
+Array
+(
+    [0] => /Level-2/TERRA1/2010_12/TERRA_MODIS.2010_12_01.12_57_58/TERRA.MODcrefl_TrueColor.2010_12_01.12_57_58.tif
+)
+<br>
+RequestClass - Everything OK - let's start p2u with this dependence 0
+startModule - INSERT INTO modulestatus SET
+			module = 'p2u',
+			argument = 'jrenato.nunes;1;T1MODIS20101201T125758;TERRA_1_MODIS_20101201_125758;1;0',
+			register = '2014-07-30 20:40:08',
+			dependid = 0,
+			host = '',
+			status = 'REGISTERED',
+			message = '',
+			who = 'AUTO' <br>
+executeModule p2u (4) - SELECT * FROM hosts,hostmodule WHERE tasks<maxtasks AND module='p2u' AND name=host ORDER BY (maxtasks-tasks) DESC <br>
+executeModule p2u (4) is being queued. <br>
+executeModule p2u (4) - UPDATE modulestatus SET
+				status = 'QUEUED',
+				message = ''
+				WHERE id = 4 <br>
+
+ RequestClass - Satelite = Modis TabName = ModisScene UserName = jrenato.nunes SceneId = T1MODIS20140730T125121 
+RequestClass - Sql Command: SELECT * FROM ModisScene WHERE SceneId='T1MODIS20140730T125121'
+RequestClass - File = TERRA_1_MODIS_20140730_125121
+RequestClass - Argument = jrenato.nunes;1;T1MODIS20140730T125121;TERRA_1_MODIS_20140730_125121;3;0
+RequestClass - starting P2U or P2C = p2u
+
+ ====> ** teste TiffFunctions:findTiffinDiskFromGralha =====> gralha = TERRA_1_MODIS_20140730_125121 
+decodeGralha - filename = TERRA_1_MODIS_20140730_125121 <br>
+%%%%% decodeGralha2 - parameters :  TERRA,1,MODIS,20140730,125121 <br>
+
+ ====> TiffFunctions:findTiffinDiskFromGralha - Gralha = TERRA_1_MODIS_20140730_125121 Satellite = TERRA Number = 1 Instrument = MODIS Channel_gralha =  Type =  Date = 20140730 Path =  Row =   
+
+
+Satellite : TERRA 
+
+
+
+Instrument : MODIS 
+
+
+
+Data : 2014  07  30   -   Horario : 12  51  21 
+
+
+aqua_file =  AQUA.MYDcrefl_TrueColor.2014_07_30.12_51_21.tif
+
+terra_file =  TERRA.MODcrefl_TrueColor.2014_07_30.12_51_21.tif
+
+dir =  /Level-2/TERRA1/2014_07/TERRA_MODIS.2014_07_30.12_51_21/
+findTiffinDiskFromGralha - command = find /Level-2/TERRA1/2014_07/TERRA_MODIS.2014_07_30.12_51_21/ -name TERRA.MODcrefl_TrueColor.2014_07_30.12_51_21.tif <br>
+findTiffinDiskFromGralha - Files found : 1 (104)<br>
+Array
+(
+    [0] => /Level-2/TERRA1/2014_07/TERRA_MODIS.2014_07_30.12_51_21/TERRA.MODcrefl_TrueColor.2014_07_30.12_51_21.tif
+)
+/Level-2/TERRA1/2014_07/TERRA_MODIS.2014_07_30.12_51_21/TERRA.MODcrefl_TrueColor.2014_07_30.12_51_21.tif <br>
+**- p2u.p2u tiffs : <br>
+Array
+(
+    [0] => /Level-2/TERRA1/2014_07/TERRA_MODIS.2014_07_30.12_51_21/TERRA.MODcrefl_TrueColor.2014_07_30.12_51_21.tif
+)
+<br>
+RequestClass - Everything OK - let's start p2u with this dependence 0
+startModule - INSERT INTO modulestatus SET
+			module = 'p2u',
+			argument = 'jrenato.nunes;1;T1MODIS20140730T125121;TERRA_1_MODIS_20140730_125121;3;0',
+			register = '2014-07-30 20:40:09',
+			dependid = 0,
+			host = '',
+			status = 'REGISTERED',
+			message = '',
+			who = 'AUTO' <br>
+executeModule p2u (5) - SELECT * FROM hosts,hostmodule WHERE tasks<maxtasks AND module='p2u' AND name=host ORDER BY (maxtasks-tasks) DESC <br>
+executeModule p2u (5) is being queued. <br>
+executeModule p2u (5) - UPDATE modulestatus SET
+				status = 'QUEUED',
+				message = ''
+				WHERE id = 5 <br>
+
+ RequestClass - Satelite = Modis TabName = ModisScene UserName = jrenato.nunes SceneId = T1MODIS20140730T125218 
+RequestClass - Sql Command: SELECT * FROM ModisScene WHERE SceneId='T1MODIS20140730T125218'
+RequestClass - File = TERRA_1_MODIS_20140730_125218
+RequestClass - Argument = jrenato.nunes;1;T1MODIS20140730T125218;TERRA_1_MODIS_20140730_125218;4;0
+RequestClass - starting P2U or P2C = p2u
+
+ ====> ** teste TiffFunctions:findTiffinDiskFromGralha =====> gralha = TERRA_1_MODIS_20140730_125218 
+decodeGralha - filename = TERRA_1_MODIS_20140730_125218 <br>
+%%%%% decodeGralha2 - parameters :  TERRA,1,MODIS,20140730,125218 <br>
+
+ ====> TiffFunctions:findTiffinDiskFromGralha - Gralha = TERRA_1_MODIS_20140730_125218 Satellite = TERRA Number = 1 Instrument = MODIS Channel_gralha =  Type =  Date = 20140730 Path =  Row =   
+
+
+Satellite : TERRA 
+
+
+
+Instrument : MODIS 
+
+
+
+Data : 2014  07  30   -   Horario : 12  52  18 
+
+
+aqua_file =  AQUA.MYDcrefl_TrueColor.2014_07_30.12_52_18.tif
+
+terra_file =  TERRA.MODcrefl_TrueColor.2014_07_30.12_52_18.tif
+
+dir =  /Level-2/TERRA1/2014_07/TERRA_MODIS.2014_07_30.12_52_18/
+findTiffinDiskFromGralha - command = find /Level-2/TERRA1/2014_07/TERRA_MODIS.2014_07_30.12_52_18/ -name TERRA.MODcrefl_TrueColor.2014_07_30.12_52_18.tif <br>
+findTiffinDiskFromGralha - Files found : 1 (104)<br>
+Array
+(
+    [0] => /Level-2/TERRA1/2014_07/TERRA_MODIS.2014_07_30.12_52_18/TERRA.MODcrefl_TrueColor.2014_07_30.12_52_18.tif
+)
+/Level-2/TERRA1/2014_07/TERRA_MODIS.2014_07_30.12_52_18/TERRA.MODcrefl_TrueColor.2014_07_30.12_52_18.tif <br>
+**- p2u.p2u tiffs : <br>
+Array
+(
+    [0] => /Level-2/TERRA1/2014_07/TERRA_MODIS.2014_07_30.12_52_18/TERRA.MODcrefl_TrueColor.2014_07_30.12_52_18.tif
+)
+<br>
+RequestClass - Everything OK - let's start p2u with this dependence 0
+startModule - INSERT INTO modulestatus SET
+			module = 'p2u',
+			argument = 'jrenato.nunes;1;T1MODIS20140730T125218;TERRA_1_MODIS_20140730_125218;4;0',
+			register = '2014-07-30 20:40:09',
+			dependid = 0,
+			host = '',
+			status = 'REGISTERED',
+			message = '',
+			who = 'AUTO' <br>
+executeModule p2u (6) - SELECT * FROM hosts,hostmodule WHERE tasks<maxtasks AND module='p2u' AND name=host ORDER BY (maxtasks-tasks) DESC <br>
+executeModule p2u (6) is being queued. <br>
+executeModule p2u (6) - UPDATE modulestatus SET
+				status = 'QUEUED',
+				message = ''
+				WHERE id = 6 <br>

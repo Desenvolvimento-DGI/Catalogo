@@ -1,0 +1,39 @@
+<?
+#
+# Documentação dos valores de Status para os Pedidos e seus Itens.
+#
+$matReqStatusInt = array(6,  'A', 'B', 'C', 'D', 'Z', 'Y');  // Códigos dos Pedidos
+
+$matReqStatus= array(6, "Aguardando Autoriza&ccedil;&atilde;o", "Aberto", "Produzido", "Fechado", "Aguardando Produ&ccedil;&atilde;o", "Problema"); // Semantica dos Códigos dos Pedidos
+
+
+$matReqItemStatusInt = array(9,  'A', 'B', 'C', 'D', 'E', 'F', 'Y', 'Z', 'W'); // Códigos dos Itens
+
+$matReqItemStatus = array(9,  "Aguardando Autoriza&ccedil;&atilde;o", "Aguardando Produ&ccedil;&atilde;o", "Em Produ&ccedil;&atilde;o", "Aguardando Grava&ccedil;&atilde;o Mídia", "Aguardando Despacho", "Despachado", "Rejeitado", "Falha na Produ&ccedil;&atilde;o", "Problema na Produ&ccedil;&atilde;o"); // Semantica dos Códigos dos Itens
+
+/*
+
+. Convenção de valores de Status para um pedido (Request).
+
+  “A” – Aguardando Autorização : O pedido (Request) contém itens tarifados e/ou sujeitos a Controle de Qualidade.
+  “B” – Aberto : O pedido (Request) contém itens ainda não produzidos.
+  “C” – Produzido : Os itens do pedido (Request) foram todos produzidos.
+  “D” – Fechado : O pedido (Request) foi produzido e aguarda despacho.
+  “Z” – Aguardando Produção : O pedido (Request) não entrou ainda em produção.
+
+
+. Convenção de valores de Status para um item (RequestItem) de um pedido (Request).
+
+  “A” – Aguardando Autorização : O item (RequestItem) é tarifados e/ou sujeito a Controle de Qualidade.
+  “B” – Aguardando Produção : O item (RequestItem) esta aguardando (disponibilidade de processamento) produção.
+  “C” – Em produção : O item (RequestItem) encontra-se em produção (sendo processado).
+  “D” – Aguardando Gravação : O item (RequestItem) aguarda providências para gravação em mídia.
+  “E” – Aguardando Despacho : O item (RequestItem) foi produzido e aguarda despacho (E-mail para o usuário solicitante contendo o link respectivo para download).
+  “F” – Despachado : O item (RequestItem) foi produzido e despachado (E-mail para o usuário solicitante contendo o link para download já foi enviado).
+  “Y” – Rejeitado : O item (RequestItem) apresenta algum problema (e. g. rejeição do Controle de Qualidade) que compromete sua integridade.
+  “Z” – Falha na Produção : A produção do item (RequestItem) foi comprometida (interrompida)  por falha em sua produção (problemas no processamento).
+  “W” – Problema na Produção : O sistema de produção encontra-se incapacitado para o atendimento ao processamento do item (RequestItem). 
+
+*/
+
+?>

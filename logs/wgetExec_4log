@@ -1,0 +1,61 @@
+ Request- Dispatcher = Man Object Cat = Object
+Log = /intranet/producao/manager/logs/requestDispatcher.log
+ RequestClass - Satelite = Modis TabName = ModisScene UserName = jrenato.nunes SceneId = A1MODIS20140730T153729 
+RequestClass - Sql Command: SELECT * FROM ModisScene WHERE SceneId='A1MODIS20140730T153729'
+RequestClass - File = AQUA_1_MODIS_20140730_153729
+RequestClass - Argument = jrenato.nunes;4;A1MODIS20140730T153729;AQUA_1_MODIS_20140730_153729;11;0
+RequestClass - starting P2U or P2C = p2u
+
+ ====> ** teste TiffFunctions:findTiffinDiskFromGralha =====> gralha = AQUA_1_MODIS_20140730_153729 
+decodeGralha - filename = AQUA_1_MODIS_20140730_153729 <br>
+%%%%% decodeGralha2 - parameters :  AQUA,1,MODIS,20140730,153729 <br>
+
+ ====> TiffFunctions:findTiffinDiskFromGralha - Gralha = AQUA_1_MODIS_20140730_153729 Satellite = AQUA Number = 1 Instrument = MODIS Channel_gralha =  Type =  Date = 20140730 Path =  Row =   
+
+
+Satellite : AQUA 
+
+
+
+Instrument : MODIS 
+
+
+
+Data : 2014  07  30   -   Horario : 15  37  29 
+
+
+aqua_file =  AQUA.MYDcrefl_TrueColor.2014_07_30.15_37_29.tif
+
+terra_file =  TERRA.MODcrefl_TrueColor.2014_07_30.15_37_29.tif
+
+dir =  /Level-2/AQUA1/2014_07/AQUA_MODIS.2014_07_30.15_37_29/
+findTiffinDiskFromGralha - command = find /Level-2/AQUA1/2014_07/AQUA_MODIS.2014_07_30.15_37_29/ -name AQUA.MYDcrefl_TrueColor.2014_07_30.15_37_29.tif <br>
+findTiffinDiskFromGralha - Files found : 1 (101)<br>
+Array
+(
+    [0] => /Level-2/AQUA1/2014_07/AQUA_MODIS.2014_07_30.15_37_29/AQUA.MYDcrefl_TrueColor.2014_07_30.15_37_29.tif
+)
+/Level-2/AQUA1/2014_07/AQUA_MODIS.2014_07_30.15_37_29/AQUA.MYDcrefl_TrueColor.2014_07_30.15_37_29.tif <br>
+**- p2u.p2u tiffs : <br>
+Array
+(
+    [0] => /Level-2/AQUA1/2014_07/AQUA_MODIS.2014_07_30.15_37_29/AQUA.MYDcrefl_TrueColor.2014_07_30.15_37_29.tif
+)
+<br>
+<br>sat_prefix  =  - satCod  = A1 -  this->sceneId  = A1MODIS20140730T153729 <br> 
+RequestClass - Everything OK - let's start p2u with this dependence 0
+startModule - INSERT INTO modulestatus SET
+			module = 'p2u',
+			argument = 'jrenato.nunes;4;A1MODIS20140730T153729;AQUA_1_MODIS_20140730_153729;11;0',
+			register = '2014-07-30 22:47:40',
+			dependid = 0,
+			host = '',
+			status = 'REGISTERED',
+			message = '',
+			who = 'AUTO' <br>
+executeModule p2u (9) - SELECT * FROM hosts,hostmodule WHERE tasks<maxtasks AND module='p2u' AND name=host ORDER BY (maxtasks-tasks) DESC <br>
+executeModule p2u (9) is being queued. <br>
+executeModule p2u (9) - UPDATE modulestatus SET
+				status = 'QUEUED',
+				message = ''
+				WHERE id = 9 <br>

@@ -1,0 +1,22 @@
+<?php $strHistory = 'Hist&oacute;rico de Pedidos';
+$strSearch = 'Consultation de Commandes';
+$strReq = 'Commandes';
+$strReqOpen = 'Ouverts';
+$strReqClose = 'Fermés';
+$strReqAll = 'Tous';
+$strInitial = 'De';
+$strFinal = 'A';
+$strBeginSearch = 'Recherche';
+$strReset = 'Nettoyer';
+$strReqNumber = 'Numéro de Commande';
+$strReqDate = 'Date';
+$strReqItens= 'Articles';
+$strReqItensDone= 'Articles Prêts';
+$strReqAction = 'Action';
+$strReqDetails = 'Détails';
+$strReqStatus = 'Etat';
+$strReqItem = ' Commande numéro :';
+$strNoItems = "Il n'y a pas d'articles à afficher!";
+$strUserReqs = "Commandes de l'Utilisateur : ";
+$strUpdate = 'Actualiser'; 
+?>

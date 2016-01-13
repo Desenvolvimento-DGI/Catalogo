@@ -1,0 +1,20 @@
+RewriteEngine On
+
+RewriteEngine On
+
+# Cache-Control de 24 horas (84.600 segundos) de tipo púo
+<FilesMatch ".(jpg|jpeg|png|gif|ico)$">
+Header set Cache-Control "max-age=84600, public"
+</FilesMatch>
+
+# Cache-Control de 10 horas (36.000 segundos) de tipo púo
+<FilesMatch ".(js|css)$">
+Header set Cache-Control "max-age=36000, public"
+</FilesMatch>
+
+
+# Cache-Control de 1 hora (3.600 segundos) de tipo púo
+<FilesMatch ".(pjs|php|htm|html)$">
+Header set Cache-Control "max-age=3600, private"
+</FilesMatch>
+

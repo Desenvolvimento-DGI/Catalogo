@@ -1,0 +1,589 @@
+--2014-07-16 14:07:38--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890078
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 424 [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890078log'
+
+     0K                                                       100% 60.3M=0s
+
+2014-07-16 14:07:38 (60.3 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890078log' saved [424/424]
+
+--2014-07-16 19:59:37--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890079
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 934 [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890079log'
+
+     0K                                                       100%  129M=0s
+
+2014-07-16 19:59:38 (129 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890079log' saved [934/934]
+
+--2014-07-17 21:19:09--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890080
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1995 (1.9K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890080log'
+
+     0K .                                                     100%  206M=0s
+
+2014-07-17 21:19:10 (206 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890080log' saved [1995/1995]
+
+--2014-07-18 17:04:26--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890081
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1995 (1.9K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890081log'
+
+     0K .                                                     100%  259M=0s
+
+2014-07-18 17:04:27 (259 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890081log' saved [1995/1995]
+
+--2014-07-18 19:18:35--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890082
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1995 (1.9K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890082log'
+
+     0K .                                                     100%  255M=0s
+
+2014-07-18 19:18:36 (255 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890082log' saved [1995/1995]
+
+--2014-07-18 19:26:25--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890083
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6715 (6.6K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890083log'
+
+     0K ......                                                100%  275M=0s
+
+2014-07-18 19:26:27 (275 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890083log' saved [6715/6715]
+
+--2014-07-18 19:39:35--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890084
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 606 [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890084log'
+
+     0K                                                       100% 84.2M=0s
+
+2014-07-18 19:39:36 (84.2 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890084log' saved [606/606]
+
+--2014-07-21 12:18:23--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890085
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2959 (2.9K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890085log'
+
+     0K ..                                                    100%  236M=0s
+
+2014-07-21 12:18:23 (236 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890085log' saved [2959/2959]
+
+--2014-07-21 12:50:35--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890086
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2959 (2.9K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890086log'
+
+     0K ..                                                    100%  233M=0s
+
+2014-07-21 12:50:36 (233 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890086log' saved [2959/2959]
+
+--2014-07-21 14:03:26--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890087
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2959 (2.9K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890087log'
+
+     0K ..                                                    100%  234M=0s
+
+2014-07-21 14:03:26 (234 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890087log' saved [2959/2959]
+
+--2014-07-21 14:14:23--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890088
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2959 (2.9K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890088log'
+
+     0K ..                                                    100%  218M=0s
+
+2014-07-21 14:14:23 (218 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890088log' saved [2959/2959]
+
+--2014-07-21 14:18:34--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890089
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2959 (2.9K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890089log'
+
+     0K ..                                                    100%  237M=0s
+
+2014-07-21 14:18:35 (237 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890089log' saved [2959/2959]
+
+--2014-07-21 14:21:48--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890090
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2959 (2.9K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890090log'
+
+     0K ..                                                    100%  252M=0s
+
+2014-07-21 14:21:48 (252 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890090log' saved [2959/2959]
+
+--2014-07-21 14:27:09--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890091
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2959 (2.9K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890091log'
+
+     0K ..                                                    100%  233M=0s
+
+2014-07-21 14:27:09 (233 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890091log' saved [2959/2959]
+
+--2014-07-21 17:38:54--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890092
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2959 (2.9K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890092log'
+
+     0K ..                                                    100%  228M=0s
+
+2014-07-21 17:38:54 (228 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890092log' saved [2959/2959]
+
+--2014-07-21 17:50:51--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890093
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3239 (3.2K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890093log'
+
+     0K ...                                                   100%  267M=0s
+
+2014-07-21 17:50:52 (267 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890093log' saved [3239/3239]
+
+--2014-07-29 13:41:21--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890094
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3414 (3.3K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890094log'
+
+     0K ...                                                   100%  277M=0s
+
+2014-07-29 13:41:23 (277 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890094log' saved [3414/3414]
+
+--2014-07-29 16:31:02--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890095
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3414 (3.3K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890095log'
+
+     0K ...                                                   100%  284M=0s
+
+2014-07-29 16:31:04 (284 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890095log' saved [3414/3414]
+
+--2014-07-29 16:39:40--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890096
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3395 (3.3K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890096log'
+
+     0K ...                                                   100%  268M=0s
+
+2014-07-29 16:39:40 (268 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890096log' saved [3395/3395]
+
+--2014-07-29 16:44:48--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890097
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3214 (3.1K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890097log'
+
+     0K ...                                                   100%  254M=0s
+
+2014-07-29 16:44:49 (254 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890097log' saved [3214/3214]
+
+--2014-07-29 17:37:36--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890098
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3214 (3.1K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890098log'
+
+     0K ...                                                   100%  253M=0s
+
+2014-07-29 17:37:37 (253 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890098log' saved [3214/3214]
+
+--2014-07-29 17:42:12--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890099
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3139 (3.1K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890099log'
+
+     0K ...                                                   100%  249M=0s
+
+2014-07-29 17:42:12 (249 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890099log' saved [3139/3139]
+
+--2014-07-29 17:48:52--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890100
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3139 (3.1K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890100log'
+
+     0K ...                                                   100%  240M=0s
+
+2014-07-29 17:48:52 (240 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890100log' saved [3139/3139]
+
+--2014-07-29 18:26:17--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890101
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3142 (3.1K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890101log'
+
+     0K ...                                                   100%  243M=0s
+
+2014-07-29 18:26:17 (243 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890101log' saved [3142/3142]
+
+--2014-07-29 18:59:09--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890102
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6563 (6.4K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890102log'
+
+     0K ......                                                100%  467M=0s
+
+2014-07-29 18:59:09 (467 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890102log' saved [6563/6563]
+
+--2014-07-29 19:24:30--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890103
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3472 (3.4K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890103log'
+
+     0K ...                                                   100%  273M=0s
+
+2014-07-29 19:24:31 (273 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890103log' saved [3472/3472]
+
+--2014-07-29 19:50:57--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890104
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3330 (3.3K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890104log'
+
+     0K ...                                                   100%  271M=0s
+
+2014-07-29 19:50:58 (271 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890104log' saved [3330/3330]
+
+--2014-07-29 19:53:01--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890105
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3336 (3.3K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890105log'
+
+     0K ...                                                   100%  256M=0s
+
+2014-07-29 19:53:02 (256 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890105log' saved [3336/3336]
+
+--2014-07-29 19:58:40--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890106
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3373 (3.3K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890106log'
+
+     0K ...                                                   100%  261M=0s
+
+2014-07-29 19:58:40 (261 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890106log' saved [3373/3373]
+
+--2014-07-29 20:28:29--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890107
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3139 (3.1K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890107log'
+
+     0K ...                                                   100%  244M=0s
+
+2014-07-29 20:28:30 (244 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890107log' saved [3139/3139]
+
+--2014-07-29 20:57:56--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890108
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3139 (3.1K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890108log'
+
+     0K ...                                                   100%  244M=0s
+
+2014-07-29 20:57:57 (244 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890108log' saved [3139/3139]
+
+--2014-07-29 21:08:26--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890109
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2844 (2.8K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890109log'
+
+     0K ..                                                    100% 35.5M=0s
+
+2014-07-29 21:08:26 (35.5 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890109log' saved [2844/2844]
+
+--2014-07-29 21:22:09--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890110
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2851 (2.8K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890110log'
+
+     0K ..                                                    100%  235M=0s
+
+2014-07-29 21:22:10 (235 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890110log' saved [2851/2851]
+
+--2014-07-30 16:30:43--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890111
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3139 (3.1K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890111log'
+
+     0K ...                                                   100%  254M=0s
+
+2014-07-30 16:30:43 (254 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890111log' saved [3139/3139]
+
+--2014-07-30 16:37:47--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890112
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3139 (3.1K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890112log'
+
+     0K ...                                                   100%  264M=0s
+
+2014-07-30 16:37:48 (264 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890112log' saved [3139/3139]
+
+--2014-07-30 16:57:57--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890113
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3155 (3.1K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890113log'
+
+     0K ...                                                   100%  251M=0s
+
+2014-07-30 16:57:57 (251 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890113log' saved [3155/3155]
+
+--2014-07-30 17:01:06--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890114
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3319 (3.2K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890114log'
+
+     0K ...                                                   100%  349M=0s
+
+2014-07-30 17:01:06 (349 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890114log' saved [3319/3319]
+
+--2014-07-30 17:02:22--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890115
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3341 (3.3K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890115log'
+
+     0K ...                                                   100%  264M=0s
+
+2014-07-30 17:02:22 (264 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890115log' saved [3341/3341]
+
+--2014-07-30 17:07:07--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890116
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6635 (6.5K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890116log'
+
+     0K ......                                                100%  581M=0s
+
+2014-07-30 17:07:08 (581 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890116log' saved [6635/6635]
+
+--2014-07-30 17:38:46--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890117
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3389 (3.3K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890117log'
+
+     0K ...                                                   100%  371M=0s
+
+2014-07-30 17:38:46 (371 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890117log' saved [3389/3389]
+
+--2014-07-30 17:44:40--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890118
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3383 (3.3K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890118log'
+
+     0K ...                                                   100%  265M=0s
+
+2014-07-30 17:44:40 (265 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890118log' saved [3383/3383]
+
+--2014-07-30 17:48:16--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890119
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3431 (3.4K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890119log'
+
+     0K ...                                                   100%  266M=0s
+
+2014-07-30 17:48:16 (266 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890119log' saved [3431/3431]
+
+--2014-07-30 17:49:42--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890120
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3433 (3.4K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890120log'
+
+     0K ...                                                   100%  267M=0s
+
+2014-07-30 17:49:42 (267 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890120log' saved [3433/3433]
+
+--2014-07-30 17:52:15--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890121
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3078 (3.0K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890121log'
+
+     0K ...                                                   100%  234M=0s
+
+2014-07-30 17:52:15 (234 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890121log' saved [3078/3078]
+
+--2014-07-30 19:54:11--  http://saci.dgi.inpe.br/intranet/producao/manager/requestDispatcher.php?reqId=890122
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2014-07-30 19:54:11 ERROR 404: Not Found.
+
+--2014-07-30 19:59:49--  http://saci.dgi.inpe.br/producao/manager/requestDispatcher.php?reqId=890123
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3057 (3.0K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890123log'
+
+     0K ..                                                    100%  256M=0s
+
+2014-07-30 19:59:50 (256 MB/s) - `/htdocs/ncdsr/logs/wgetExec_890123log' saved [3057/3057]
+
+--2014-07-30 20:15:51--  http://saci.dgi.inpe.br/producao/manager/requestDispatcher.php?reqId=890124
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890124log'
+
+     0K .......... .......... ..                               31.9K=0.7s
+
+2014-07-30 20:15:52 (31.9 KB/s) - `/htdocs/ncdsr/logs/wgetExec_890124log' saved [23207]
+
+--2014-07-30 20:43:39--  http://saci.dgi.inpe.br/producao/manager/requestDispatcher.php?reqId=890125
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_890125log'
+
+     0K .......... .......... .                                 110K=0.2s
+
+2014-07-30 20:43:40 (110 KB/s) - `/htdocs/ncdsr/logs/wgetExec_890125log' saved [22030]
+
+--2014-07-30 20:55:47--  http://saci.dgi.inpe.br/producao/manager/requestDispatcher.php?reqId=1
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_1log'
+
+     0K .......... ....                                        54.3K=0.3s
+
+2014-07-30 20:55:48 (54.3 KB/s) - `/htdocs/ncdsr/logs/wgetExec_1log' saved [14506]
+
+--2014-07-30 22:21:49--  http://intranet.dgi.inpe.br/producao/manager/requestDispatcher.php?reqId=2
+Resolving intranet.dgi.inpe.br... 150.163.134.105
+Connecting to intranet.dgi.inpe.br|150.163.134.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 106 [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_2log'
+
+     0K                                                       100% 11.9M=0s
+
+2014-07-30 22:21:54 (11.9 MB/s) - `/htdocs/ncdsr/logs/wgetExec_2log' saved [106/106]
+
+--2014-07-30 22:47:31--  http://saci.dgi.inpe.br/producao/manager/requestDispatcher.php?reqId=3
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4908 (4.8K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_3log'
+
+     0K ....                                                  100%  339M=0s
+
+2014-07-30 22:47:31 (339 MB/s) - `/htdocs/ncdsr/logs/wgetExec_3log' saved [4908/4908]
+
+--2014-07-30 23:03:18--  http://saci.dgi.inpe.br/producao/manager/requestDispatcher.php?reqId=4
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2538 (2.5K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_4log'
+
+     0K ..                                                    100%  301M=0s
+
+2014-07-30 23:03:19 (301 MB/s) - `/htdocs/ncdsr/logs/wgetExec_4log' saved [2538/2538]
+
+--2014-07-30 23:19:56--  http://saci.dgi.inpe.br/producao/manager/requestDispatcher.php?reqId=5
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2542 (2.5K) [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_5log'
+
+     0K ..                                                    100%  300M=0s
+
+2014-07-30 23:19:56 (300 MB/s) - `/htdocs/ncdsr/logs/wgetExec_5log' saved [2542/2542]
+
+--2014-07-30 23:25:07--  http://saci.dgi.inpe.br/producao/manager/requestDispatcher.php?reqId=5
+Resolving saci.dgi.inpe.br... 150.163.134.98
+Connecting to saci.dgi.inpe.br|150.163.134.98|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 106 [text/html]
+Saving to: `/htdocs/ncdsr/logs/wgetExec_5log'
+
+     0K                                                       100% 15.7M=0s
+
+2014-07-30 23:25:07 (15.7 MB/s) - `/htdocs/ncdsr/logs/wgetExec_5log' saved [106/106]
+

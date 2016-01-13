@@ -1,0 +1,1626 @@
+// Documento JavaScript 
+
+// O frame onde serão apresentados os resultados chama-se: finstrucoes
+
+
+
+//var satellites = new Array("","CB2","CB2B","L1","L2","L3","L5","L7","T1","A1","P6","GLS"); 
+//var satellites = new Array("","NPP", "T1","A1", "RE", "RE1", "RE2", "RE3", "RE4", "RE5"); 
+//var satellites = new Array("","NPP", "T1","A1", "UKDMC2"); 
+//var satellites = new Array("","NPP", "T1","A1", "UKDMC2", "P6", "RES2", "CB2", "RE", "RE1", "RE2", "RE3", "RE4", "RE5"); 
+//var satellites = new Array("","NPP", "T1","A1", "UKDMC2", "P6", "RES2", "L8", "RE", "RE1", "RE2", "RE3", "RE4", "RE5"); 
+var satellites = new Array(); 
+var sensors = new Array();
+
+//sensors[0] = new Array(["",""]);
+//sensors[0] = new Array(["",""], ["VIIRS","VIIRS"], ["MODIS","MODIS"], ["REIS","REIS"]);
+//sensors[0] = new Array(["",""], ["VIIRS","VIIRS"], ["MODIS","MODIS"], ["SLIM","SLIM"]);
+
+
+
+if ( possuiPermissaoRapidEye )
+{
+	
+	//satellites = new Array("","NPP", "T1","A1", "UKDMC2", "P6", "RES2", "L8", "RE", "RE1", "RE2", "RE3", "RE4", "RE5"); 
+	//satellites = new Array("","A1", "L8","RE", "RE1", "RE2", "RE3", "RE4", "RE5", "P6", "RES2", "NPP", "T1", "UKDMC2" ); 	
+	//satellites = new Array("","A1", "CB4", "L5", "L8","RE", "RE1", "RE2", "RE3", "RE4", "RE5", "P6", "RES2", "NPP", "T1", "UKDMC2" );
+	//satellites = new Array("","A1", "L8","RE", "RE1", "RE2", "RE3", "RE4", "RE5", "P6", "RES2", "NPP", "T1", "UKDMC2" ); 	
+
+	// 2015-08-14  Com  CBERS-4
+	//satellites = new Array("","A1", "CB4",  "L8","RE", "RE1", "RE2", "RE3", "RE4", "RE5", "P6", "RES2", "NPP", "T1", "UKDMC2" );
+
+	// 2015-12-14  Sem  CBERS-4
+	satellites = new Array("","A1", "L8","RE", "RE1", "RE2", "RE3", "RE4", "RE5", "P6", "RES2", "NPP", "T1", "UKDMC2" );
+
+	
+	//sensors[0] = new Array(["",""], ["VIIRS","VIIRS"], ["MODIS","MODIS"], ["SLIM","SLIM"], ["LISS3", "LIS3"], ["AWIFS", "AWIF"], ["REIS","REIS"], ["CCD", "CCD"], ["IRM", "IRM"], ["WFI", "WFI"]);
+	//sensors[0] = new Array(["",""], ["VIIRS","VIIRS"], ["MODIS","MODIS"], ["SLIM","SLIM"], ["LISS3", "LIS3"], ["AWIFS", "AWIF"], ["OLI", "OLI"], ["REIS","REIS"]);
+	//sensors[0] = new Array(["",""], ["AWIFS", "AWIF"], ["LISS3", "LIS3"], ["MODIS","MODIS"], ["MUX","MUX"], ["OLI", "OLI"], ["REIS","REIS"], ["SLIM","SLIM"], ["TM","TM"], ["VIIRS","VIIRS"], ["WFI","WFI"]);
+	//sensors[0] = new Array(["",""], ["AWIFS", "AWIF"], ["LISS3", "LIS3"], ["MODIS","MODIS"], ["MUX","MUX"], ["OLI", "OLI"], ["REIS","REIS"], ["SLIM","SLIM"], ["TM","TM"], ["VIIRS","VIIRS"]);
+	//sensors[0] = new Array(["",""], ["AWIFS", "AWIF"], ["LISS3", "LIS3"], ["MODIS","MODIS"], ["OLI", "OLI"], ["REIS","REIS"], ["SLIM","SLIM"], ["TM","TM"], ["VIIRS","VIIRS"]);
+
+	// 2015-12-14  Com  CBERS-4
+	//sensors[0] = new Array(["",""], ["AWIFS", "AWIF"], ["LISS3", "LIS3"], ["MODIS","MODIS"], ["MUX","MUX"], ["OLI", "OLI"], ["REIS","REIS"], ["SLIM","SLIM"], ["TM","TM"], ["VIIRS","VIIRS"]);
+
+	// 2015-12-14  Sem  CBERS-4
+	sensors[0] = new Array(["",""], ["AWIFS", "AWIF"], ["LISS3", "LIS3"], ["MODIS","MODIS"], ["OLI", "OLI"], ["REIS","REIS"], ["SLIM","SLIM"], ["TM","TM"], ["VIIRS","VIIRS"]);
+
+
+	sensors[1] = new Array(["MODIS","MODIS"]);  // AQUA
+	//sensors[2] = new Array(["",""], ["WFI","WFI"], ["MUX","MUX"]); // CBERS-4
+	//sensors[2] = new Array(["TM","TM"]);	
+    
+	// 2015-12-14  Com CBERS-4
+	//sensors[2] = new Array(["MUX","MUX"]); // CBERS-4
+
+	sensors[2] = new Array(["OLI","OLI"]);	
+
+	sensors[3] = new Array(["REIS","REIS"]);  // Sensor dos satelites RAPIDEYE
+	sensors[4] = new Array(["REIS","REIS"]);  // Sensor do  satelite  RAPIDEYE 1
+	sensors[5] = new Array(["REIS","REIS"]);  // Sensor do  satelite  RAPIDEYE 2
+	sensors[6] = new Array(["REIS","REIS"]);  // Sensor do  satelite  RAPIDEYE 3
+	sensors[7] = new Array(["REIS","REIS"]);  // Sensor do  satelite  RAPIDEYE 4
+	sensors[8] = new Array(["REIS","REIS"]);  // Sensor do  satelite  RAPIDEYE 5
+
+	sensors[9] =  new Array(["",""], ["LISS3","LIS3"], ["AWIFS","AWIF"]);
+	sensors[10] = new Array(["",""], ["LISS3","LIS3"], ["AWIFS","AWIF"]);
+
+	sensors[11] = new Array(["VIIRS","VIIRS"]);
+	sensors[12] = new Array(["MODIS","MODIS"]);
+	sensors[13] = new Array(["SLIM","SLIM"]);
+		
+	
+}
+else
+{
+	
+	//satellites = new Array("","NPP", "T1","A1", "UKDMC2", "P6", "RES2", "L8", "RE", "RE1", "RE2", "RE3", "RE4", "RE5"); 	
+	//satellites = new Array("","A1", "L8", "P6", "RES2", "NPP", "T1", "UKDMC2" ); 	
+	//satellites = new Array("","A1", "CB4", "L5", "L8", "P6", "RES2", "NPP", "T1", "UKDMC2" );
+	//satellites = new Array("","A1", "L8", "P6", "RES2", "NPP", "T1", "UKDMC2" ); 	
+	
+	//2015-12-14  Com  CBERS-4
+	//satellites = new Array("","A1", "CB4", "L8", "P6", "RES2", "NPP", "T1", "UKDMC2" );
+
+	//2015-12-14  Sem  CBERS-4
+	satellites = new Array("","A1", "L8", "P6", "RES2", "NPP", "T1", "UKDMC2" );
+
+	
+	//2015-12-14  Com  CBERS-4
+	//sensors[0] = new Array(["",""], ["AWIFS", "AWIF"], ["LISS3", "LIS3"], ["MODIS","MODIS"], ["MUX","MUX"], ["OLI", "OLI"], ["SLIM","SLIM"], ["TM","TM"], ["VIIRS","VIIRS"]);
+
+	//2015-12-14  Sem  CBERS-4	
+	sensors[0] = new Array(["",""], ["AWIFS", "AWIF"], ["LISS3", "LIS3"], ["MODIS","MODIS"], ["OLI", "OLI"], ["SLIM","SLIM"], ["TM","TM"], ["VIIRS","VIIRS"]);
+	
+	sensors[1] = new Array(["MODIS","MODIS"]);
+	//sensors[2] = new Array(["MUX","MUX"]);
+	
+	sensors[2] = new Array(["OLI","OLI"]);	
+	sensors[3] =  new Array(["",""], ["LISS3","LIS3"], ["AWIFS","AWIF"]);
+	sensors[4] = new Array(["",""], ["LISS3","LIS3"], ["AWIFS","AWIF"]);
+	sensors[5] = new Array(["VIIRS","VIIRS"]);
+	sensors[6] = new Array(["MODIS","MODIS"]);
+	sensors[7] = new Array(["SLIM","SLIM"]);
+	
+}
+
+
+
+
+
+
+/*
+sensors[1] = new Array(["VIIRS","VIIRS"]);
+sensors[2] = new Array(["MODIS","MODIS"]);
+sensors[3] = new Array(["MODIS","MODIS"]);
+sensors[4] = new Array(["SLIM","SLIM"]);
+
+sensors[5] = new Array(["",""], ["LISS3","LIS3"], ["AWIFS","AWIF"]);
+sensors[6] = new Array(["",""], ["LISS3","LIS3"], ["AWIFS","AWIF"]);
+sensors[7] = new Array(["OLI","OLI"]);
+//sensors[6] = new Array(["AWIF","AWIFS"]);
+//sensors[7] = new Array(["",""], ["CCD", "CCD"], ["IRM", "IRM"], ["WFI", "WFI"]);
+
+sensors[8] = new Array(["REIS","REIS"]);  // Sensor dos satelites RAPIDEYE
+sensors[9] = new Array(["REIS","REIS"]);  // Sensor do  satelite  RAPIDEYE 1
+sensors[10] = new Array(["REIS","REIS"]);  // Sensor do  satelite  RAPIDEYE 2
+sensors[11] = new Array(["REIS","REIS"]);  // Sensor do  satelite  RAPIDEYE 3
+sensors[12] = new Array(["REIS","REIS"]);  // Sensor do  satelite  RAPIDEYE 4
+sensors[13] = new Array(["REIS","REIS"]);  // Sensor do  satelite  RAPIDEYE 5
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+	
+	var countries = new Array("","ARGENTINA","BOLIVIA","BRASIL","CHILE","COLOMBIA","ECUADOR", "FRENCH GUIANA","GUYANA","PARAGUAY","PERU","SURINAME","URUGUAY","VENEZUELA","ALGERIA","ANGOLA","BENIN","BOTSWANA","BURKINA FASO","BURUNDI","CAMEROON","CENT AF REP","CHAD","CONGO","DJIBOUTI","EGYPT", "EQ GUINEA","ERITREA","ETHIOPIA","GABON","GAMBIA","GHANA","GUINEA", "GUINEABISSAU","IVORY COAST","KENYA","LESOTHO","LIBERIA","LIBYA","MADAGASCAR","MALAWI","MALI","MAURITANIA","MOROCCO","MOZAMBIQUE","NAMIBIA","NIGER","NIGERIA","RWANDA","SENEGAL","SIERRA LEONE","SOMALIA","SOUTH AFRICA","SUDAN","SWAZILAND","TANZANIA","TOGO","TUNISIA","UGANDA","W SAHARA","ZAIRE","ZAMBIA","ZIMBABWE");
+	
+	var states = new Array();
+	states[0] = new Array("");
+	states[1] = new Array("");
+	states[2] = new Array("");
+	states[3] = new Array("","ACRE","ALAGOAS","AMAPÁ","AMAZONAS","BAHIA","CEARÁ","DISTRITO FEDERAL","ESPÍRITO SANTO","GOIÁS","MARANHÃO","MINAS GERAIS","MATO GROSSO","MATO GROSSO DO SUL","PARÁ","PARAÍBA", "PERNAMBUCO","PIAUÍ","PARANÁ","RIO DE JANEIRO","RIO GRANDE DO NORTE","RONDÔNIA","RORAIMA","RIO GRANDE DO SUL","SANTA CATARINA","SERGIPE","SÃO PAULO","TOCANTINS");
+	states[4] = new Array("");
+	states[5] = new Array("");
+	states[6] = new Array("");
+	states[7] = new Array("");
+	states[8] = new Array("");
+	states[9] = new Array("");
+	states[10] = new Array("");
+	states[11] = new Array("");
+	states[12] = new Array("");
+	states[13] = new Array("");
+	
+	//States for Africa
+	states[14] = states[15] = states[16] = states[17] = states[18] = states[19] = states[20] = states[21] = states[22] = states[23] = states[24] = states[25] = states[26] = states[27] = states[28] = states[29] = states[30] = states[31] = states[32] = states[33] = states[34] = states[35] = states[36] = states[37] = states[38] = states[39] = states[40] = states[14] = states[41] = states[42] = states[43] = states[44] = states[45] = states[46] = states[47] = states[48] = states[49] = states[50] = states[51]= states[52] = states[53] = states[54] = states[55] = states[56] = states[57] = states[58] = states[59] = states[60] = states[61] = states[62] = states[63] = new Array("");
+	
+	
+
+
+
+
+
+
+	
+	/**
+	* Nome: displayStates
+	* Função executada sempre que um país é selecionado na caixa de seleção de países da área de pesquisa
+	* Responsável por alterar o valor dos campos estados a cada seleção de um país
+	*
+	* entry		Indice referente ao país selecionado na caixa de seleção de países
+	*/
+	function displayStates(entry)
+	{
+			while (states[entry].length < document.general.ESTADO.options.length)
+			{
+					document.general.ESTADO.options[(document.general.ESTADO.options.length - 1)] = null;
+			}
+			for (y=0;y<states[entry].length;y++)
+			{
+					document.general.ESTADO[y]=new Option(states[entry][y]);
+			}
+			
+			document.getElementById("MUNICIPIO").value="";
+	}
+	
+		
+	
+	// Executa processamento paa o botão Pesquisa Municípios
+	function realizaPesquisaMunicipios()
+	{
+		var textoMUNICIPIO = String(document.getElementById("MUNICIPIO").value);
+		var tamanhoMUNICIPIO = textoMUNICIPIO.length;
+		if ( tamanhoMUNICIPIO > 2  ) 
+		{
+			obtemCidades('BTNCIDADE');
+		}
+		else
+		{
+			
+			if ( tamanhoMUNICIPIO == 0  ) 
+			{
+				obtemCidades('BTNCIDADE');
+			}
+		}
+			
+	}	
+	
+	
+	
+	// Executa processamento paa o botão Pesquisa Municípios
+	function realizaPesquisaPaisEstado()
+	{
+			obtemCidades('BTNCIDADE');
+	}	
+	
+	
+	
+	function obtemCidades(botao)
+	{
+		var objetoHTTP;		
+		var pais = document.getElementById('PAIS').value;
+		var estado = document.getElementById('ESTADO').value;
+		var municipio = document.getElementById('MUNICIPIO').value;
+	
+		var registros = document.getElementById('registrosCidades');
+		var strParametros="&TRIGGER=" + botao;
+
+
+		if ( pais == '' &&  estado == '' &&  municipio == '' )	
+		{
+			registros.innerHTML='';							
+			return true;
+		}
+			
+		// Parâmetros básicos para todas as opções de botões
+		strParametros += "&PAIS=" + pais + "&ESTADO=" + estado + "&MUNICIPIO=" + municipio;
+		
+		if (window.ActiveXObject)
+		{
+			objetoHTTP=new ActiveXObject("Microsoft.XMLHTTP"); // IE
+		}
+		else if (window.XMLHttpRequest)
+		{
+			objetoHTTP=new XMLHttpRequest(); // Outros Navegadores
+		}
+		else
+		{
+			return null;
+		}
+		
+		
+		
+	
+		objetoHTTP.onreadystatechange=function()
+		{
+			
+				
+			if (objetoHTTP.readyState == 4 && objetoHTTP.status == 200)
+			{
+				var retorno = objetoHTTP.responseText;
+	
+				if ( retorno.trim() == "0"  || retorno.trim() == "")
+				{
+					
+					/*
+					retorno = '<table border="0" cellpadding="5" cellspacing="2">' +
+					'<tr>' +
+					'<td>Nenhum registro encontrado para a seleção realizada</td>' +
+					'</tr>' +
+					'</table>';
+					*/
+					retorno="";
+					var mensagem = 'Nenhum registro encontrado para a seleção realizada.<br>' +
+								   'Selecione novos valores e execute a pesquisa novamente.';
+					
+					registros.innerHTML='';
+					
+					//top.exibeMensagemGenerica( mensagem );
+				}
+	
+				registros.innerHTML=retorno;
+			}
+			else
+			{			
+				//top.selecionaPaginaResultados();
+				//registros.innerHTML="Processando.";	
+			}
+				
+		}
+	
+		objetoHTTP.open("GET","buscarcidades.php?p=1&pg=1" + strParametros, true);
+		objetoHTTP.send();
+	
+	}
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+String.prototype.trim = function () 
+{
+    return this.replace(/^\s*/, "").replace(/\s*$/, ""); 
+}
+
+
+
+
+/**
+* Nome: displaySatellite
+* Função executada sempre que um satélite é selecionado na caixa de seleção de satélites da área de pesquisa
+* Responsável por alterar os valores existntes na caixa de seleção de sensores, alterar os valores dos campos referentes às datas 
+* inicial e final do período e exibir ou ocultar alguns conjuntos de campos relevantes ao satélite selecionado 
+*
+* entry		Indice referente ao satélite selecionado na caixa de seleção de satélites
+*/
+function displaySatellite(entry)
+{ 
+	
+		
+	while (sensors[entry].length < document.general.SENSOR.options.length)
+	{
+		document.general.SENSOR.options[(document.general.SENSOR.options.length - 1)] = null;
+	} 
+	
+	for ( y=0; y < sensors[entry].length; y++ )
+	{
+		document.general.SENSOR[y]=new Option(sensors[entry][y][0], sensors[entry][y][1]);
+	} 
+	
+	
+	
+	//Preenche os campos de data inicial e final de acordo com o satélite selecionado
+	
+	var datainicial = '';
+	var datafinal = '';	
+	//var diferencaDias = 14; // duas semanas de dados
+	var diferencaDias = 21; // tres semanas de dados
+
+	var sateliteSelecionado = String(satellites[entry].toUpperCase());
+	
+
+	switch ( sateliteSelecionado )
+	{
+		// Aqua
+		case "A1":  
+		case "AQUA":  
+			//datainicial = dataInicialAQUA;
+			//datafinal = dataFinalAQUA;
+			//datainicial = '01/01/2005';
+			//datafinal = '24/12/2012';
+			//datafinal = obterDataAtual();
+			//datainicial = subtraiDiasData(datafinal, diferencaDias);
+			datainicial = '15/07/2002';
+			datafinal = obterDataAtual();
+
+			
+			// Desabilitar campos relacionados à cobertura de nuvens
+			habilitarCoberturaDeNuvens();
+			//desabilitarCoberturaDeNuvens();
+			// Desbilitar campos relacionados à região e ao fuso
+			desabilitarRegiaoEFuso();
+			desabilitarCoberturaEQualidade();							
+			break;
+			
+			
+		//  Terra
+		case "T1":  
+		case "TERRA":  
+			//datainicial = dataInicialTERRA;
+			//datafinal = dataFinalTERRA;
+			//datainicial = '30/06/2005';
+			//datafinal = '01/11/2012';
+			//datafinal = obterDataAtual();
+			//datainicial = subtraiDiasData(datafinal, diferencaDias);
+			datainicial = '09/05/2002';
+			datafinal = obterDataAtual();
+			
+			// Desabilitar campos relacionados à cobertura de nuvens
+			habilitarCoberturaDeNuvens();
+			//desabilitarCoberturaDeNuvens();
+			// Desbilitar campos relacionados à região e ao fuso
+			desabilitarRegiaoEFuso();	
+			desabilitarCoberturaEQualidade();						
+			break;
+			
+			
+		//  S-NPP	
+		case "NPP":  
+		case "SNPP":  
+		case "S-NPP":  
+			//datainicial = dataInicialSNPP;
+			//datafinal = dataFinalSNPP;
+			//datainicial = "31/03/2014";
+			//datafinal = obterDataAtual();
+			//datainicial = subtraiDiasData(datafinal, diferencaDias);			
+			datainicial = "24/04/2013";
+			datafinal = obterDataAtual();
+			
+			// Desabilitar campos relacionados à cobertura de nuvens
+			habilitarCoberturaDeNuvens();
+			// Desbilitar campos relacionados à região e ao fuso
+			desabilitarRegiaoEFuso();		
+			desabilitarCoberturaEQualidade();					
+			break;
+			
+			
+			
+			
+		//  UK-DMC2	
+		case "UKDMC":  
+		case "UKDMC2":  
+		case "UK-DMC2":  
+			//datainicial = dataInicialUKDMC2;
+			//datafinal = dataFinalUKDMC2;
+			//datainicial = "31/03/2014";
+			//datafinal = obterDataAtual();
+			//datafinal = "12/02/2013";
+			//datainicial = subtraiDiasData(datafinal, diferencaDias);				
+			datainicial = "06/02/2012";
+			datafinal = "31/03/2013";
+					
+			
+			// Desabilitar campos relacionados à cobertura de nuvens
+			habilitarCoberturaDeNuvens();
+			//desabilitarCoberturaDeNuvens();
+			// Desbilitar campos relacionados à região e ao fuso
+			desabilitarRegiaoEFuso();	
+			desabilitarCoberturaEQualidade();						
+			break;
+			
+			
+
+			
+			
+		//  RESOURCESAT-1	
+		case "P6":  
+		case "RESOURCESAT1":  
+		case "RESOURCESAT-1":  
+			//datainicial = dataInicialUKDMC2;
+			//datafinal = dataFinalUKDMC2;
+			//datainicial = "31/03/2014";
+			//datafinal = obterDataAtual();
+			//datafinal = "12/02/2013";
+			//datainicial = subtraiDiasData(datafinal, diferencaDias);				
+			datainicial = "10/09/2009";
+			datafinal = "12/09/2013";
+					
+			
+			// Desabilitar campos relacionados à cobertura de nuvens
+			habilitarCoberturaDeNuvens();
+			//desabilitarCoberturaDeNuvens();
+			// Desbilitar campos relacionados à região e ao fuso
+			desabilitarRegiaoEFuso();	
+			desabilitarCoberturaEQualidade();						
+			break;
+			
+			
+
+			
+		//  RESOURCESAT-2
+		case "RES2":  
+		case "RESOURCESAT2":  
+		case "RESOURCESAT-2":  
+			//datainicial = dataInicialUKDMC2;
+			//datafinal = dataFinalUKDMC2;
+			//datainicial = "31/03/2014";
+			//datafinal = obterDataAtual();
+			//datafinal = "12/02/2013";
+			//datainicial = subtraiDiasData(datafinal, diferencaDias);				
+			datainicial = "01/09/2014";
+			datafinal = obterDataAtual();					
+			
+			// Desabilitar campos relacionados à cobertura de nuvens
+			habilitarCoberturaDeNuvens();
+			//desabilitarCoberturaDeNuvens();
+			// Desbilitar campos relacionados à região e ao fuso
+			desabilitarRegiaoEFuso();	
+			desabilitarCoberturaEQualidade();						
+			break;
+			
+			
+
+
+			
+		//  CBERS-2
+		case "CB2":  
+		case "CBERS2":  
+		case "CBERS-2":  		
+			//datainicial = dataInicialUKDMC2;
+			//datafinal = dataFinalUKDMC2;
+			//datainicial = "31/03/2014";
+			//datafinal = obterDataAtual();
+			//datafinal = "12/02/2013";
+			//datainicial = subtraiDiasData(datafinal, diferencaDias);				
+			datainicial = "01/03/2003";
+			datafinal = obterDataAtual();
+					
+			
+			// Desabilitar campos relacionados à cobertura de nuvens
+			habilitarCoberturaDeNuvens();
+			//desabilitarCoberturaDeNuvens();
+			// Desbilitar campos relacionados à região e ao fuso
+			desabilitarRegiaoEFuso();	
+			desabilitarCoberturaEQualidade();						
+			break;
+			
+			
+
+			
+		//  LANDSAT-5
+		case "L5":  
+		case "LANDSAT5":  
+		case "LANDSAT-5":  		
+			//datainicial = dataInicialUKDMC2;
+			//datafinal = dataFinalUKDMC2;
+			//datainicial = "31/03/2014";
+			//datafinal = obterDataAtual();
+			//datafinal = "12/02/2013";
+			//datainicial = subtraiDiasData(datafinal, diferencaDias);				
+			datainicial = "01/01/1984";
+			datafinal = "30/11/2011";
+					
+			
+			// Desabilitar campos relacionados à cobertura de nuvens
+			habilitarCoberturaDeNuvens();
+			//desabilitarCoberturaDeNuvens();
+			// Desbilitar campos relacionados à região e ao fuso
+			desabilitarRegiaoEFuso();	
+			desabilitarCoberturaEQualidade();						
+			break;
+			
+			
+			
+		//  LANDSAT-8
+		case "L8":  
+		case "LANDSAT8":  
+		case "LANDSAT-8":  		
+			//datainicial = dataInicialUKDMC2;
+			//datafinal = dataFinalUKDMC2;
+			//datainicial = "31/03/2014";
+			//datafinal = obterDataAtual();
+			//datafinal = "12/02/2013";
+			//datainicial = subtraiDiasData(datafinal, diferencaDias);				
+			datainicial = "01/01/2015";
+			datafinal = obterDataAtual();
+					
+			
+			// Desabilitar campos relacionados à cobertura de nuvens
+			desabilitarCoberturaDeNuvens();
+			//desabilitarCoberturaDeNuvens();
+			// Desbilitar campos relacionados à região e ao fuso
+			desabilitarRegiaoEFuso();	
+			habilitarCoberturaEQualidade();		
+			break;
+			
+			
+		//  CBERS-4
+		case "CB4":  
+		case "CBERS4":  
+		case "CBERS-4":  		
+			//datainicial = dataInicialUKDMC2;
+			//datafinal = dataFinalUKDMC2;
+			//datainicial = "31/03/2014";
+			//datafinal = obterDataAtual();
+			//datafinal = "12/02/2013";
+			//datainicial = subtraiDiasData(datafinal, diferencaDias);				
+			datainicial = "01/01/2015";
+			datafinal = obterDataAtual();
+					
+			
+			// Habilitar campos relacionados à cobertura de nuvens
+			habilitarCoberturaDeNuvens();
+			//desabilitarCoberturaDeNuvens();
+			// Desbilitar campos relacionados à região e ao fuso
+			desabilitarRegiaoEFuso();	
+			desabilitarCoberturaEQualidade();		
+			break;
+			
+			
+
+
+
+		//  RAPIDEYE 	
+		//case "RE", "RE1","RE2", "RE3", "RE4", "RE5":
+		case "RE":
+		case "RE1":
+		case "RE2":
+		case "RE3": 
+		case "RE4": 
+		case "RE5":
+			//datainicial = "31/03/2014";
+			//datafinal = obterDataAtual();
+			//datafinal = "11/12/2013";
+			//datainicial = subtraiDiasData(datafinal, diferencaDias);			
+			datainicial = "01/01/2012";
+			datafinal = "11/12/2013";
+			
+			// Desabilitar campos relacionados à cobertura de nuvens
+			habilitarCoberturaDeNuvens();
+			desabilitarCoberturaEQualidade();	
+			//desabilitarCoberturaDeNuvens();
+			// Habilitar campos relacionados à região e ao fuso
+			//habilitarRegiaoEFuso();
+			break;
+			
+			
+			
+		default:
+			//datafinal = '';
+			//datainicial = '';	
+			datafinal = obterDataAtual();
+			datainicial = subtraiDiasData(datafinal, diferencaDias);							
+			
+			// Desabilitar campos relacionados à cobertura de nuvens
+			habilitarCoberturaDeNuvens();
+			desabilitarCoberturaEQualidade();							
+
+			//desabilitarCoberturaEQualidade();	
+			//desabilitarCoberturaDeNuvens();
+			// Habilitar campos relacionados à região e ao fuso
+			//habilitarRegiaoEFuso();
+			break;
+		
+	}
+	
+	
+	var campoDataIni = document.getElementById(document.general.DATAINI);
+	var campoDataFim = document.getElementById(document.general.DATAFIM);
+	
+	document.general.DATAINI.value = datainicial;
+	document.general.DATAFIM.value = datafinal;
+}
+
+
+
+
+
+/**
+* Nome: desabilitarCoberturaDeNuvens
+* Permite ocultar os campos referentes à cobertura de nuvens
+*/
+function desabilitarCoberturaDeNuvens()
+{
+	var coberturaNuvens = document.getElementById('coberturanuvens');
+	coberturaNuvens.style.display = 'none';	
+}
+
+
+
+/**
+* Nome: habilitarCoberturaDeNuvens
+* Permite exibir os campos referentes à cobertura de nuvens
+*/
+function habilitarCoberturaDeNuvens()
+{
+	var coberturaNuvens = document.getElementById('coberturanuvens');
+	coberturaNuvens.style.display = 'block';
+}
+
+
+
+
+
+
+
+
+
+
+/**
+* Nome: desabilitarCoberturaEQualidade
+* Permite ocultar os campos referentes à cobertura de nuvens e qualidade
+* da imagem
+*/
+function desabilitarCoberturaEQualidade()
+{
+	var coberturaEqualidade = document.getElementById('coberturaequalidade');
+	coberturaEqualidade.style.display = 'none';	
+}
+
+
+
+/**
+* Nome: habilitarCoberturaEQualidade
+* Permite exibir os campos referentes à cobertura de nuvens e qualidade
+* da imagem
+*/
+function habilitarCoberturaEQualidade()
+{
+	var coberturaEqualidade = document.getElementById('coberturaequalidade');
+	coberturaEqualidade.style.display = 'block';
+}
+
+
+
+
+
+
+
+/**
+* Nome: desabilitarRegiaoEFuso
+* Permite ocultar os campos referentes à região e ao fuso
+*/
+function desabilitarRegiaoEFuso()
+{
+	var regiaoEFuso = document.getElementById('verregiaobrasil');
+	regiaoEFuso.style.display = 'none';
+}
+
+
+/**
+* Nome: habilitarRegiaoEFuso
+* Permite exibir os campos referentes à região e ao fuso
+*/
+function habilitarRegiaoEFuso()
+{
+	var regiaoEFuso = document.getElementById('verregiaobrasil');
+	regiaoEFuso.style.display = 'block';
+}
+
+
+
+
+
+
+/**
+Nome: obterDataAtual
+Responsável por obter a data atual e colocá-la no formato dia/mes/ano (dd/mm/aaaa)
+*/ 
+function obterDataAtual()
+{
+	var novaData = new Date();
+	var dia, mes, ano, dataRetorno;
+	
+	
+	dia=novaData.getDate();
+	mes=novaData.getMonth() + 1; // O mês vai de 0 (Jan) a 11 (Dez)
+	ano=novaData.getFullYear();
+		
+	// Formata a data no formato dia/mes/ano
+	dataRetorno = "";
+	if ( dia <  10 ) dataRetorno = "0";
+	dataRetorno+=dia.toString();	
+
+	dataRetorno+="/";	
+	if ( mes <  10 ) dataRetorno += "0";
+	dataRetorno+=mes.toString();	
+
+	dataRetorno+="/";	
+	dataRetorno+=ano.toString();	
+		
+	return dataRetorno;		
+}
+
+
+
+
+
+
+
+/**
+Nome: subtraiDiasData
+Responsável por obter a data atual e colocá-la no formato dia/mes/ano (dd/mm/aaaa)
+
+parametroData	Data que sera usada como base na geração da nova data
+*/ 
+function subtraiDiasData( parametroData, numeroDias )
+{
+	
+	var parAno, parMes, parDia;
+	var dia, mes, ano, dataSubtraida;
+	
+	parDia=parametroData.substr(0,2)
+	parMes=parametroData.substr(3,2);
+	parAno=parametroData.substr(6,4);
+
+	var dataAtual = new Date();
+	dataAtual.setFullYear(parAno);
+	dataAtual.setMonth(parMes);
+	dataAtual.setDate(parDia);
+	
+	
+	//dataAtual.setTime(Date.parse(parametroData.split("/").reverse().join("-") + " 00:00:00"));
+	dataAtual.setDate(dataAtual.getDate() - numeroDias );
+	
+	dia=dataAtual.getDate();
+	mes=dataAtual.getMonth();
+	ano=dataAtual.getFullYear();
+		
+	
+		
+	// Formata a data no formato dia/mes/ano
+	dataSubtraida = "";
+	if ( dia <  10 ) dataSubtraida = "0";
+	dataSubtraida+=dia.toString();	
+
+	dataSubtraida+="/";	
+	if ( mes <  10 ) dataSubtraida += "0";
+	dataSubtraida+=mes.toString();	
+
+	dataSubtraida+="/";	
+	dataSubtraida+=ano.toString();		
+		
+	return dataSubtraida;		
+}
+
+
+
+
+
+
+
+
+	
+
+
+function obtemDados(evento, botao)
+{
+	
+	
+	var objetoHTTP;
+	var tamanhopagina=20;
+	var tamanhomaximopagina=200;
+	
+	//var statusscene = document.getElementById('STATUSSCENE').value;
+	
+	var hcqa = document.getElementById('CQA');
+	var hcqr = document.getElementById('CQR');
+
+
+	
+	var satelite = document.getElementById('SATELITE').value;
+	var sensor = document.getElementById('SENSOR').value;
+	var dataini = document.getElementById('DATAINI').value;
+	var datafim = document.getElementById('DATAFIM').value;
+
+	var q1 = document.getElementById('Q1').value;
+	var q2 = document.getElementById('Q2').value;
+	var q3 = document.getElementById('Q3').value;
+	var q4 = document.getElementById('Q4').value;
+
+
+
+	var horbitaini = document.getElementById('ORBITAINI');
+	var horbitafim = document.getElementById('ORBITAFIM');
+	var hpontoini  = document.getElementById('PONTOINI');
+	var hpontofim  = document.getElementById('PONTOFIM');
+
+	var orbitaini = horbitaini.value;
+	var orbitafim = horbitafim.value;
+	var pontoini  = hpontoini.value;
+	var pontofim  = hpontofim.value;
+
+
+
+	
+	var hnorte = document.getElementById('NORTE');
+	var hsul   = document.getElementById('SUL');
+	var hleste = document.getElementById('LESTE');
+	var hoeste = document.getElementById('OESTE');
+	
+	
+
+	
+	var norte = hnorte.value;
+	var sul   = hsul.value;
+	var leste = hleste.value;
+	var oeste = hoeste.value;
+	
+
+	var hlat = document.getElementById('LAT');
+	var hlon = document.getElementById('LON');
+	
+	var lat = hlat.value;
+	var lon = hlon.value;
+	
+	
+	
+	
+	var cntotal = document.getElementById('CNTOTAL').value;
+	var qitotal = document.getElementById('QITOTAL').value;
+	
+	
+	
+	
+	var brregiao = document.getElementById('REGIAOBRASIL').value;
+	var brfuso   = document.getElementById('FUSO').value;
+
+
+	
+	var strParametros="&TRIGGER=" + botao;
+		
+	
+	// Libera os objetos criados
+	top.frames['fmosaico'].liberaImagens();	
+		
+	
+	
+	
+	// Parâmetros básicos para todas as opções de botões
+	//strParametros = strParametros +"&STATUSSCENE=" + statusscene + "&SATELITE=" + satelite + "&SENSOR=" + sensor + "&DATAINI=" + dataini + "&DATAFIM=" + datafim;
+	//strParametros = strParametros + "&SATELITE=" + satelite + "&SENSOR=" + sensor + "&DATAINI=" + dataini + "&DATAFIM=" + datafim;
+	//strParametros = strParametros + "&SATELITE=" + satelite + "&SENSOR=" + sensor + "&DATAINI=" + dataini + "&DATAFIM=" + datafim;
+	
+
+
+	
+
+	if ( hcqa.checked )
+	{
+
+		if ( hcqr.checked )
+		{
+			var cqa = hcqa.value;
+			var cqr = hcqr.value;
+
+			strParametros = strParametros + "&CQA=" + cqa + "&CQR=" + cqr;
+		}
+		else
+		{
+			var cqa = hcqa.value;
+			strParametros = strParametros + "&CQA=" + cqa;
+		}
+		
+	}
+	else
+	{	
+		if ( hcqr.checked )
+		{		
+			var cqr = hcqr.value;
+
+			strParametros = strParametros + "&CQR=" + cqr;
+		}
+	}
+	
+	
+
+	strParametros = strParametros + "&SATELITE=" + satelite + "&SENSOR=" + sensor + "&DATAINI=" + dataini + "&DATAFIM=" + datafim;	
+	
+	//alert(satelite.toUpperCase().substring(0,2));
+	
+	// Verifica se o satélite é RAPIDEYE ou não foi selecionado nenhum satélite
+	if ( satelite.toUpperCase().substring(0,2) == "RE"  || satelite.toUpperCase() == "" )
+	{
+		
+		// Acrescenta o campo referente à regiao caso seja selecionado alguma regiao	
+		if ( brregiao != "" )
+		{
+			strParametros = strParametros + "&REGIAOBRASIL=" + brregiao;
+		}
+		
+		
+		
+		// Acrescenta o campo referente ao fuso caso seja selecionado algum	
+		if ( brfuso != "" )
+		{
+			strParametros = strParametros + "&FUSO=" + brfuso;
+		}
+		
+	}
+		
+	
+	
+	
+	// Verifica se o satélite não é o LANDSAT-8 ou CBERS-4
+	// Satélites meteorológicos não possuem controle de cobertura de nuvens
+	if ( satelite.toUpperCase() != "L8"  /*&& satelite.toUpperCase() != "CB4" */)
+	{
+		// Acrescenta os campos de cobertura de nuves	
+		strParametros = strParametros + "&Q1=" + q1 + "&Q2=" + q2 + "&Q3=" + q3 + "&Q4=" + q4;
+	}
+	
+	
+	
+	if ( satelite.toUpperCase() == "L8"  /* || satelite.toUpperCase() == "CB4"  */|| satelite.toUpperCase() == "" )
+	{
+		// Acrescenta os campos de cobertura de nuvem total de de qualidade da imagem	
+		strParametros = strParametros + "&CNTOTAL=" + cntotal + "&QITOTAL=" + qitotal;
+	
+	}
+	
+	
+	// Realiza algumas validações de acordo com o botão pressionado na tela de pesquisa
+	switch ( botao.toUpperCase() )
+	{
+			
+		case 'BTNREGIAO':
+		
+			// Valida os campos necesários para pesquisa por região
+			if ( norte == '' ) 
+			{
+				hnorte.focus();
+				return false;
+			}
+			
+			if ( sul == '' ) 
+			{
+				hsul.focus();
+				return false;
+			}
+			
+			if ( leste == '' ) 
+			{
+				hleste.focus();
+				return false;
+			}
+			
+			if ( oeste == '' ) 
+			{
+				hoeste.focus();
+				return false;
+			}
+			
+			// Campos válido, e dessa forma pode ser realizada a pesquisa
+			strParametros = strParametros + "&NORTE=" + norte + "&SUL=" + sul + "&LESTE=" + leste + "&OESTE=" + oeste;
+			break;
+			
+			
+		case 'BTNINTERFACE':
+		
+			// Valida os campos necesários para pesquisa por um ponto no mapa
+			if ( lat == '' ) 
+			{
+				hlat.focus();
+				return false;
+			}
+			
+			if ( lon == '' ) 
+			{
+				hlon.focus();
+				return false;
+			}
+			
+			// Campos válidos, e dessa forma pode ser realizada a pesquisa
+			strParametros = strParametros + "&LAT=" + lat + "&LON=" + lon ;
+			break;
+			
+			
+		case 'BTNOPPAGINADO':
+		case 'BTNOPTODOS':
+		
+			
+			// Valida os campos necesários para pesquisa por orbita no mapa
+			if ( orbitaini == '' && orbitafim == '' ) 
+			{
+				horbitaini.focus();
+				return false;
+			}
+			
+
+			// Valida os campos necesários para pesquisa por orbita no mapa
+			if ( orbitaini == '' && orbitafim != '' ) 
+			{
+				horbitaini.value = orbitaini = orbitafim;
+			}
+			else
+			{
+				if ( orbitafim == '' && orbitaini != '' ) 
+				{
+					horbitafim.value = orbitafim = orbitaini;
+				}
+			}
+			
+			
+
+
+
+
+
+			// Valida os campos necesários para pesquisa por ponto no mapa
+			if ( pontoini == '' && pontofim != '' ) 
+			{
+				hpontoini.value = pontoini = pontofim;
+			}
+			else
+			{
+				if ( pontofim == '' && pontoini != '' )
+				{
+					hpontofim.value = pontofim = pontoini;
+				}
+			}
+			
+			
+
+			if ( pontoini.length == 2)
+			{
+					pontoini = "0" + pontoini;
+					hpontoini.value = pontoini;
+			}
+			else
+			{
+				
+				if ( pontoini.length == 1)
+				{
+					pontoini = "00" + pontoini;
+					hpontoini.value = pontoini;
+					
+				}
+			}
+			
+			
+
+			if ( pontofim.length == 2)
+			{
+					pontofim = "0" + pontofim;
+					hpontofim.value = pontofim;
+			}
+			else
+			{
+				
+				if ( pontofim.length == 1)
+				{
+					pontofim = "00" + pontofim;
+					hpontofim.value = pontofim;
+				}
+			}
+	
+			
+			 
+			// Caso seja selecionado o botão para apresentar os registros em página única
+			if ( botao.toUpperCase() == "BTNOPTODOS" )
+			{
+				// Apresentar todos os registros em apenas uma página
+				tamanhopagina=tamanhomaximopagina;
+			}
+			
+
+			
+			// Campos válidos, e dessa forma pode ser realizada a pesquisa
+			strParametros = strParametros + "&ORBITAINI=" + orbitaini + "&ORBITAFIM=" + orbitafim + "&PONTOINI=" + pontoini + "&PONTOFIM=" + pontofim;
+			break;
+	}
+	
+	
+	
+	
+	
+	
+	
+	// Tamanho da página em número de registros a serem apresentados durante a paginação
+	strParametros = strParametros + "&TAMPAGINA=" + tamanhopagina;
+	
+	
+	
+	
+	//alert("botao  =  " + botao);
+	//alert("strParametros  =  " + strParametros);
+	
+	
+	if (window.ActiveXObject)
+	{
+		objetoHTTP=new ActiveXObject("Microsoft.XMLHTTP"); // IE
+	}
+	else if (window.XMLHttpRequest)
+	{
+		objetoHTTP=new XMLHttpRequest(); // Outros Navegadores
+	}
+	else
+	{
+		return null;
+	}
+	
+	
+	
+	
+	
+	
+	
+
+	objetoHTTP.onreadystatechange=function()
+	{
+		var registros = (parent.document.getElementById('fresultado')).contentWindow.document.getElementById('registros');
+			
+		if (objetoHTTP.readyState == 4 && objetoHTTP.status == 200)
+		{
+			var retorno = objetoHTTP.responseText;
+
+			if ( retorno.trim() == "0" )
+			{
+				//alert( "Pesquisa  ==>  " + retorno);	
+				retorno = '<table border="0" cellpadding="5" cellspacing="2">' +
+				'<tr>' +
+				'<td>Nenhum registro encontrado para a seleção realizada</td>' +
+				'</tr>' +
+				'</table>';
+				
+				var mensagem = 'Nenhum registro encontrado para a seleção realizada<br>' +
+				               'Selecione novos valores e execute a pesquisa novamente.';
+				
+				top.exibeMensagemGenerica( mensagem );
+			}
+			else
+			{
+				top.selecionaPaginaResultados();
+			}
+
+			registros.innerHTML=retorno;
+			top.desativaCarregamento();
+		}
+		else
+		{			
+			top.ativaCarregamento();				
+		}
+			
+	}
+
+
+
+	//alert("GET :: strParametros = " + strParametros );
+
+	top.desativaCarregamento();
+	objetoHTTP.open("GET","buscarimagens.php?p=1&pg=1" + strParametros, true);
+	objetoHTTP.send();
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+/*
+function obtemCidades(evento, botao)
+{
+	
+	
+	var objetoHTTP;
+	
+	var satelite = document.getElementById('SATELITE').value;
+	var sensor = document.getElementById('SENSOR').value;
+	var dataini = document.getElementById('DATAINI').value;
+	var datafim = document.getElementById('DATAFIM').value;
+
+	var q1 = document.getElementById('Q1').value;
+	var q2 = document.getElementById('Q2').value;
+	var q3 = document.getElementById('Q3').value;
+	var q4 = document.getElementById('Q4').value;
+
+	
+	var hnorte = document.getElementById('NORTE');
+	var hsul   = document.getElementById('SUL');
+	var hleste = document.getElementById('LESTE');
+	var hoeste = document.getElementById('OESTE');
+	
+	
+	var brregiao = document.getElementById('REGIAOBRASIL').value;
+	var brfuso   = document.getElementById('FUSO').value;
+
+	
+	var norte = hnorte.value;
+	var sul   = hsul.value;
+	var leste = hleste.value;
+	var oeste = hoeste.value;
+	
+
+	var hlat = document.getElementById('LAT');
+	var hlon = document.getElementById('LON');
+	
+	var lat = hlat.value;
+	var lon = hlon.value;
+	
+	
+	var pais = document.getElementById('PAIS').value;
+	var estado = document.getElementById('ESTADO').value;
+	var municipio = document.getElementById('MUNICIPIO').value;
+
+	
+	
+	
+	
+	var strParametros="&TRIGGER=" + botao;
+		
+	
+	// Libera os objetos criados
+	top.frames['fmosaico'].liberaImagens();	
+	
+	
+	// Parâmetros básicos para todas as opções de botões
+	strParametros = strParametros + "&SATELITE=" + satelite + "&SENSOR=" + sensor + "&DATAINI=" + dataini + "&DATAFIM=" + datafim;
+	
+		
+	
+	// Verifica se o satélite é RAPIDEYE ou não foi selecionado nenhum satélite
+	if ( satelite.toUpperCase().substring(0,2) == "RE"  || satelite.toUpperCase() == "" )
+	{
+		
+		// Acrescenta o campo referente à regiao caso seja selecionado alguma regiao	
+		if ( brregiao != "" )
+		{
+			strParametros = strParametros + "&REGIAOBRASIL=" + brregiao;
+		}
+		
+		
+		
+		// Acrescenta o campo referente ao fuso caso seja selecionado algum	
+		if ( brfuso != "" )
+		{
+			strParametros = strParametros + "&FUSO=" + brfuso;
+		}
+		
+	}
+		
+	
+	
+	
+	// Verifica se o satélite não é o S-NPP
+	if ( satelite.toUpperCase() != "NPP" )
+	{
+		// Acrescenta os campos de cobertura de nuves	
+		strParametros = strParametros + "&Q1=" + q1 + "&Q2=" + q2 + "&Q3=" + q3 + "&Q4=" + q4;
+	}
+	
+		
+		// Parâmetros básicos para todas as opções de botões
+	strParametros = strParametros + "&PAIS=" + pais + "&ESTADO=" + estado + "&MUNICIPIO=" + municipio;
+
+	
+	if (window.ActiveXObject)
+	{
+		objetoHTTP=new ActiveXObject("Microsoft.XMLHTTP"); // IE
+	}
+	else if (window.XMLHttpRequest)
+	{
+		objetoHTTP=new XMLHttpRequest(); // Outros Navegadores
+	}
+	else
+	{
+		return null;
+	}
+	
+	
+	
+
+	objetoHTTP.onreadystatechange=function()
+	{
+		var registros = (parent.document.getElementById('fcidades')).contentWindow.document.getElementById('registros');
+			
+		if (objetoHTTP.readyState == 4 && objetoHTTP.status == 200)
+		{
+			var retorno = objetoHTTP.responseText;
+
+			if ( retorno.trim() == "0" )
+			{
+				
+				retorno = '<table border="0" cellpadding="5" cellspacing="2">' +
+				'<tr>' +
+				'<td>Nenhum registro encontrado para a seleção realizada***</td>' +
+				'</tr>' +
+				'</table>';
+				
+				var mensagem = 'Nenhum registro encontrado para a seleção realizada<br>' +
+				               'Selecione novos valores e execute a pesquisa novamente.';
+				
+				top.exibeMensagemGenerica( mensagem );
+			}
+			else
+			{
+				top.selecionaPaginaCidades();
+			}
+
+			registros.innerHTML=retorno;
+		}
+		else
+		{			
+			//top.selecionaPaginaResultados();
+			//registros.innerHTML="Processando.";	
+		}
+			
+	}
+
+	objetoHTTP.open("GET","buscarcidades.php?p=1&pg=1" + strParametros, true);
+	objetoHTTP.send();
+
+}
+
+*/
+
+
+/*
+function obtemListagemCidades(evento, botao)
+{
+	
+	
+	var objetoHTTP;
+	
+	var satelite = document.getElementById('SATELITE').value;
+	var sensor = document.getElementById('SENSOR').value;
+	var dataini = document.getElementById('DATAINI').value;
+	var datafim = document.getElementById('DATAFIM').value;
+
+	var q1 = document.getElementById('Q1').value;
+	var q2 = document.getElementById('Q2').value;
+	var q3 = document.getElementById('Q3').value;
+	var q4 = document.getElementById('Q4').value;
+
+	
+	var hnorte = document.getElementById('NORTE');
+	var hsul   = document.getElementById('SUL');
+	var hleste = document.getElementById('LESTE');
+	var hoeste = document.getElementById('OESTE');
+	
+	
+	var brregiao = document.getElementById('REGIAOBRASIL').value;
+	var brfuso   = document.getElementById('FUSO').value;
+
+	
+	var norte = hnorte.value;
+	var sul   = hsul.value;
+	var leste = hleste.value;
+	var oeste = hoeste.value;
+	
+
+	var hlat = document.getElementById('LAT');
+	var hlon = document.getElementById('LON');
+	
+	var lat = hlat.value;
+	var lon = hlon.value;
+	
+	
+	var pais = document.getElementById('PAIS').value;
+	var estado = document.getElementById('ESTADO').value;
+	var municipio = document.getElementById('MUNICIPIO').value;
+
+	
+	
+	
+	
+	var strParametros="&TRIGGER=" + botao;
+		
+	
+	// Libera os objetos criados
+	top.frames['fmosaico'].liberaImagens();	
+	
+	
+	// Parâmetros básicos para todas as opções de botões
+	strParametros = strParametros + "&SATELITE=" + satelite + "&SENSOR=" + sensor + "&DATAINI=" + dataini + "&DATAFIM=" + datafim;
+	
+		
+	
+	// Verifica se o satélite é RAPIDEYE ou não foi selecionado nenhum satélite
+	if ( satelite.toUpperCase().substring(0,2) == "RE"  || satelite.toUpperCase() == "" )
+	{
+		
+		// Acrescenta o campo referente à regiao caso seja selecionado alguma regiao	
+		if ( brregiao != "" )
+		{
+			strParametros = strParametros + "&REGIAOBRASIL=" + brregiao;
+		}
+		
+		
+		
+		// Acrescenta o campo referente ao fuso caso seja selecionado algum	
+		if ( brfuso != "" )
+		{
+			strParametros = strParametros + "&FUSO=" + brfuso;
+		}
+		
+	}
+		
+	
+	
+	
+	// Verifica se o satélite não é o S-NPP
+	if ( satelite.toUpperCase() != "NPP" )
+	{
+		// Acrescenta os campos de cobertura de nuves	
+		strParametros = strParametros + "&Q1=" + q1 + "&Q2=" + q2 + "&Q3=" + q3 + "&Q4=" + q4;
+	}
+	
+		
+		// Parâmetros básicos para todas as opções de botões
+	strParametros = strParametros + "&PAIS=" + pais + "&ESTADO=" + estado + "&MUNICIPIO=" + municipio;
+
+	
+	if (window.ActiveXObject)
+	{
+		objetoHTTP=new ActiveXObject("Microsoft.XMLHTTP"); // IE
+	}
+	else if (window.XMLHttpRequest)
+	{
+		objetoHTTP=new XMLHttpRequest(); // Outros Navegadores
+	}
+	else
+	{
+		return null;
+	}
+	
+	
+	
+
+	objetoHTTP.onreadystatechange=function()
+	{
+		var registros = document.getElementById('registrosCidades');
+			
+		if (objetoHTTP.readyState == 4 && objetoHTTP.status == 200)
+		{
+			var retorno = objetoHTTP.responseText;
+
+			if ( retorno.trim() == "0" )
+			{
+				
+				retorno = '<table border="0" cellpadding="5" cellspacing="2">' +
+				'<tr>' +
+				'<td>Nenhum registro encontrado para a seleção realizada***</td>' +
+				'</tr>' +
+				'</table>';
+				
+				var mensagem = 'Nenhum registro encontrado para a seleção realizada.<br>' +
+				               'Selecione novos valores e execute a pesquisa novamente.';
+				
+				top.exibeMensagemGenerica( mensagem );
+			}
+			else
+			{
+				//top.selecionaPaginaCidades();
+			}
+
+			registros.innerHTML=retorno;
+		}
+		else
+		{			
+			//top.selecionaPaginaResultados();
+			//registros.innerHTML="Processando.";	
+		}
+			
+	}
+
+	objetoHTTP.open("GET","buscarcidades.php?p=1&pg=1" + strParametros, true);
+	objetoHTTP.send();
+
+}
+
+*/
+
+
+
+
+function executaPesquisaCoordenadas( parLat, parLon, parMunicipio, parEstado, parPais )
+{			
+	var hlat = document.getElementById('LAT');
+	var hlon = document.getElementById('LON');
+	
+	hlat.value = parLat;
+	hlon.value = parLon;
+	
+	top.frames['fmosaico'].desenhaMarcadorCidade( parLat, parLon, parMunicipio, parEstado, parPais );
+	obtemDados(null, 'BTNINTERFACE');
+	
+}
+
+
+
+
+function validaCampoData(evento, objeto)
+{
+	var keypress=(window.event)?event.keyCode:evento.which;
+	campo = eval (objeto);
+	if (campo.value == 'dd/mm/aaaa')
+	{
+		campo.value=""
+	}
+	
+	caracteres = '0123456789';
+	
+	if ((caracteres.search(String.fromCharCode (keypress))!=-1) && campo.value.length < (11))
+	{
+		if (campo.value.length == 2)	campo.value = campo.value + "/";
+		else if (campo.value.length == 5)	campo.value = campo.value + "/";
+	} 
+	else
+		event.returnValue = false;
+}
+
+
+
+
+
+
+
+
+function onFocusBlurCampo(parObjeto, parCor)
+{
+	//parObjeto.style.backgroundColor = parCor;	
+		
+	//parObjeto.css('-moz-box-shadow: inset 0 0 10px #000000');
+	//parObjeto.css('-webkit-box-shadow: inset 0 0 10px #000000');
+	//parObjeto.css('box-shadow: inset 0 0 10px #000000');
+	var estiloCampo = "0 0 4px " + parCor;
+	parObjeto.style.boxShadow = estiloCampo;
+	parObjeto.style.MozBoxShadow = estiloCampo;
+	parObjeto.style.WebkitBoxShadow = estiloCampo;
+		
+}
+
+
+
+
